@@ -423,7 +423,7 @@ namespace Vars
 		CVar(WeaponRainbow, false, IS_VISUAL)
 		CVar(WeaponOverlayRainbow, false, IS_VISUAL)
 		CVar(WeaponOverlayPulse, false, IS_VISUAL)
-	SUBNAMESPACE_END(DME);
+		SUBNAMESPACE_END(DME);
 
 	NAMESPACE_END(Chams);
 
@@ -917,6 +917,61 @@ namespace Vars
 	SUBNAMESPACE_END(FONT_INDICATORS);
 
 	NAMESPACE_END(Fonts);
+
+	NAMESPACE_BEGIN(Colors)
+		CVar(White, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(OutlineESP, Color_t(0, 0, 0, 255), IS_VISUAL)
+		CVar(DTBarIndicatorsCharged, Gradient_t(Color_t(106, 255, 131, 180), Color_t(106, 255, 250, 180)), IS_VISUAL)
+		CVar(DTBarIndicatorsCharging, Gradient_t(Color_t(255, 192, 81, 180), Color_t(255, 134, 81, 180)), IS_VISUAL)
+		CVar(ChokedBar, Gradient_t(Color_t(47, 39, 0, 255), Color_t(255, 210, 0, 255)), IS_VISUAL)
+		CVar(GradientHealthBar, Gradient_t(Color_t(255, 0, 0, 255), Color_t(0, 202, 124, 255)), IS_VISUAL)
+		CVar(GradientOverhealBar, Gradient_t(Color_t(0, 202, 124, 255), Color_t(167, 255, 237, 255)), IS_VISUAL)
+		CVar(UberchargeBar, Gradient_t(Color_t(255, 255, 255, 255), Color_t(255, 0, 228, 255)), IS_VISUAL)
+		CVar(Cond, Color_t(254, 202, 87, 25), IS_VISUAL)
+		CVar(Target, Color_t(240, 147, 43, 255), IS_VISUAL)
+		CVar(Invuln, Color_t(120, 111, 166, 255), IS_VISUAL)
+		CVar(Cloak, Color_t(165, 177, 194, 255), IS_VISUAL)
+		CVar(Friend, Color_t(32, 191, 107, 255), IS_VISUAL)
+		CVar(Local, Color_t(168, 255, 211, 255), IS_VISUAL)
+		CVar(Ignored, Color_t(32, 191, 107, 255), IS_VISUAL)
+		CVar(Overheal, Color_t(84, 160, 255, 255), IS_VISUAL)
+		CVar(Health, Color_t(0, 230, 64, 255), IS_VISUAL)
+		CVar(Ammo, Color_t(191, 191, 191, 255), IS_VISUAL)
+		CVar(UberColor, Color_t(224, 86, 253, 255), IS_VISUAL)
+		CVar(TeamRed, Color_t(255, 100, 87, 255), IS_VISUAL)
+		CVar(TeamBlu, Color_t(30, 144, 255, 255), IS_VISUAL)
+		CVar(Enemy, Color_t(255, 100, 87, 255), IS_VISUAL)
+		CVar(rTeam, Color_t(30, 144, 255, 255), IS_VISUAL)
+		CVar(Hands, Color_t(30, 144, 255, 255), IS_VISUAL)
+		CVar(HandsOverlay, Color_t(255, 127, 0, 255), IS_VISUAL)
+		CVar(Weapon, Color_t(30, 144, 255, 255), IS_VISUAL)
+		CVar(WeaponOverlay, Color_t(255, 127, 0, 255), IS_VISUAL)
+		CVar(WorldModulation, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(SkyModulation, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(StaticPropModulation, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(ParticleColor, Color_t(5, 255, 255, 255), IS_VISUAL)
+		CVar(FOVCircle, Color_t(255, 255, 255, 10), IS_VISUAL)
+		CVar(Bones, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(BulletTracer, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(FeetColor, Color_t(255, 150, 0, 255), IS_VISUAL)
+		CVar(FresnelBase, Color_t(0, 0, 0, 255), IS_VISUAL)
+		CVar(FresnelBaseHands, Color_t(0, 0, 0, 255), IS_VISUAL)
+		CVar(FresnelBaseWeps, Color_t(0, 0, 0, 255), IS_VISUAL)
+		CVar(FresnelTop, Color_t(0, 255, 0, 255), IS_VISUAL)
+		CVar(AimSquareCol, Color_t(0, 255, 0, 255), IS_VISUAL)
+		CVar(DtOutline, Color_t(30, 30, 30, 180), IS_VISUAL)
+		CVar(NotifBG, Color_t(30, 30, 30, 255), IS_VISUAL)
+		CVar(NotifOutline, Color_t(255, 101, 101, 255), IS_VISUAL)
+		CVar(NotifText, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(HitboxFace, Color_t(255, 255, 255, 25), IS_VISUAL)
+		CVar(HitboxEdge, Color_t(255, 255, 255, 175), IS_VISUAL)
+		CVar(WeaponIcon, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(NoscopeLines1, Color_t(0, 0, 0, 255), IS_VISUAL)
+		CVar(NoscopeLines2, Color_t(0, 0, 0, 100), IS_VISUAL)
+		CVar(bonecolor, Color_t(231, 95, 255, 10), IS_VISUAL)
+		CVar(NPC, Color_t(255, 255, 255, 255), IS_VISUAL)
+		CVar(Bomb, Color_t(255, 255, 255, 255), IS_VISUAL)
+	NAMESPACE_END(Colors);
 
 	// Debug options
 	NAMESPACE_BEGIN(Debug);

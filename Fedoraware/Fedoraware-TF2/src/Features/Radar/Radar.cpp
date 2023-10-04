@@ -246,7 +246,7 @@ void CRadar::DrawPoints(CBaseEntity* pLocal)
 
 						const float flRatio = (flHealth / flMaxHealth);
 
-						g_Draw.Rect(((nX - nW) - 1), nY, nW, nSize, Colors::OutlineESP);
+						g_Draw.Rect(((nX - nW) - 1), nY, nW, nSize, Vars::Colors::OutlineESP.Value);
 						g_Draw.Rect(((nX - nW) - 1), (nY + nSize - (nSize * flRatio)), nW, (nSize * flRatio),
 									clrHealth);
 					}
@@ -345,7 +345,7 @@ void CRadar::DrawPoints(CBaseEntity* pLocal)
 							if (nEntTeam == 3) { nTexture += 10; }
 						}
 
-						g_Draw.Texture(nX, nY, nSize, nSize, Colors::White, nTexture);
+						g_Draw.Texture(nX, nY, nSize, nSize, Vars::Colors::White.Value, nTexture);
 					}
 				}
 
@@ -380,7 +380,7 @@ void CRadar::DrawPoints(CBaseEntity* pLocal)
 
 					float flRatio = (flHealth / flMaxHealth);
 
-					g_Draw.Rect(((nX - nWidth) - 1), nY, nWidth, nSize, Colors::OutlineESP);
+					g_Draw.Rect(((nX - nWidth) - 1), nY, nWidth, nSize, Vars::Colors::OutlineESP.Value);
 					g_Draw.Rect(((nX - nWidth) - 1), (nY + nSize - (nSize * flRatio)), nWidth, (nSize * flRatio),
 								clrHealth);
 
@@ -388,7 +388,7 @@ void CRadar::DrawPoints(CBaseEntity* pLocal)
 					{
 						flRatio = (flOverHeal / flMaxHealth);
 						g_Draw.Rect(((nX - nWidth) - 1), (nY + (nSize + 1) - (nSize * flRatio)), nWidth,
-									(nSize * flRatio), Colors::Overheal);
+									(nSize * flRatio), Vars::Colors::Overheal.Value);
 					}
 				}
 

@@ -67,14 +67,14 @@ void CNotifications::Draw()
 
 		delete[] wc; // Memory leak
 
-		g_Draw.Line(x, y, x, y + 19, { Colors::NotifOutline.r, Colors::NotifOutline.g, Colors::NotifOutline.b, color.a });
+		g_Draw.Line(x, y, x, y + 19, { Vars::Colors::NotifOutline.Value.r, Vars::Colors::NotifOutline.Value.g, Vars::Colors::NotifOutline.Value.b, color.a });
 		g_Draw.GradientRectA(x + 1, y, w / 3 + 9, y + 19,
-							 { Colors::NotifBG.r, Colors::NotifBG.g, Colors::NotifBG.b, color.a },
+							 { Vars::Colors::NotifBG.Value.r, Vars::Colors::NotifBG.Value.g, Vars::Colors::NotifBG.Value.b, color.a },
 							 {
-								 Colors::NotifBG.r, Colors::NotifBG.g, Colors::NotifBG.b, 1
+								 Vars::Colors::NotifBG.Value.r, Vars::Colors::NotifBG.Value.g, Vars::Colors::NotifBG.Value.b, 1
 							 }, true);
 		g_Draw.String(font, x + 6, y + 2,
-					  { Colors::NotifText.r, Colors::NotifText.g, Colors::NotifText.b, color.a },
+					  { Vars::Colors::NotifText.Value.r, Vars::Colors::NotifText.Value.g, Vars::Colors::NotifText.Value.b, color.a },
 					  ALIGN_DEFAULT, notify->Text.c_str());
 
 		y += size;

@@ -350,7 +350,7 @@ void CGlowEffect::Render()
 					if (!Utils::IsOnScreen(pLocal, Health))
 						continue;
 
-					m_vecGlowEntities.push_back({Health, Colors::Health, Vars::Glow::World::Alpha.Value});
+					m_vecGlowEntities.push_back({Health, Vars::Colors::Health.Value, Vars::Glow::World::Alpha.Value});
 
 					if (!F::Chams.HasDrawn(Health))
 						DrawModel(Health, STUDIO_RENDER, true);
@@ -364,7 +364,7 @@ void CGlowEffect::Render()
 					if (!Utils::IsOnScreen(pLocal, Ammo))
 						continue;
 
-					m_vecGlowEntities.push_back({Ammo, Colors::Ammo, Vars::Glow::World::Alpha.Value});
+					m_vecGlowEntities.push_back({Ammo, Vars::Colors::Ammo.Value, Vars::Glow::World::Alpha.Value});
 
 					if (!F::Chams.HasDrawn(Ammo))
 						DrawModel(Ammo, STUDIO_RENDER, true);

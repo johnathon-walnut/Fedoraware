@@ -168,7 +168,7 @@ void CSpyWarning::Run()
 
 			static constexpr int SIZE = 40;
 			g_Draw.Texture(((g_ScreenSize.w / 2) - (SIZE / 2)), (((g_ScreenSize.h / 2) - 100) - (SIZE / 2)), SIZE, SIZE,
-						   Colors::White, 8);
+						   Vars::Colors::White.Value, 8);
 
 			for (const auto& spy : m_vecSpies)
 			{

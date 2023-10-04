@@ -42,7 +42,7 @@ MAKE_HOOK(EngineVGui_Paint, Utils::GetVFuncPtr(I::EngineVGui, 14), void, __fastc
 			for (int nIndex = 0; nIndex < ICONS::TEXTURE_AMOUNT; nIndex++)
 			{
 				ICONS::ID[nIndex] = -1;
-				g_Draw.Texture(-200, 0, 18, 18, Colors::White, nIndex);
+				g_Draw.Texture(-200, 0, 18, 18, Vars::Colors::White.Value, nIndex);
 			}
 
 			bInitIcons = true;
